@@ -9,10 +9,6 @@ app.debug=True
 @app.route('/')
 def hello_world():
     return "Hello world!"
-
-@app.route('/sub/<user>')
-def sub_page(user):
-    return ("This is a sub page for %s!" % user)
  
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
